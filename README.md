@@ -1,5 +1,4 @@
 <h1>Blog Website</h1>
-<hr>
 <p>this is my first database website</p>
 <br>
 <h2>Tools</h2>
