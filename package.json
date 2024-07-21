@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "devSart": "nodemon server.js"
+    "serve": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
