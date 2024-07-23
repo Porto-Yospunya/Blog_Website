@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="p-3"><%= article.title %></h1>
-    <div class="p-3">
-        <%= article.createdAt.toLocaleDateString() %>
-    </div>
-    <div class="m-3">
-        <a class="btn btn-primary" href="/">All Articles</a>
-        <a class="btn btn-warning" href="/articles/edit/<%= article.id %>">Edit</a>
-    </div>
-    <div class="p-3">
-        <%- article.sanitizedHtml %>
+    <div>
+        <h1 class="m-3">Edit Articles</h1>
+
+        <form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+            <%- include('form_field')  %>
+        </form>
     </div>
 </body>
 </html>

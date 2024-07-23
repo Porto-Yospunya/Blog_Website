@@ -26,6 +26,9 @@
                     <div class="p-2">
                         <a class="btn btn-success" href="articles/<%= article.slug %>">Read More</a>
                     </div>
+                    <div class="p-2">
+                        <a class="btn btn-warning" href="articles/<%= article.id %>">Edit</a>
+                    </div>
                     <form class="p-2" action="/articles/<%= article.id %>?_method=DELETE" method="POST">
                         <button class="btn btn-danger" type="submit">Delete</button>
                     </form>
