@@ -1,10 +1,22 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const articleRouter = require('./routues/articles')
-const app = express()
-const methodOverride = require('method-override')
-const Article = require('./models/article')
+/*
+npm Install
+=====================
+npm i express
+npm i mongoose
+npm i methodOverride
+=====================
+*/
 
+const express = require('express') // import express
+const mongoose = require('mongoose') // import mongooses
+const methodOverride = require('method-override')
+
+const Article = require('./models/article') // article theme
+const articleRouter = require('./routues/articles') // all articles 
+
+const app = express() 
+
+// connect mongodb
 mongoose.connect('mongodb://localhost:27017/blog')
 
 // set read folder views
@@ -12,12 +24,13 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
+// start first display
 app.get('/', async (req, res) => {
-    const articles = await Article.find().sort({ createdAt: 'desc' })
-    res.render('articles/index', { articles: articles})
+    const articles = await Article.find().sort({ createdAt: 'desc' }) // sort date in article
+    res.render('articles/index', { articles: articles}) // render index
 })
 
-// read page articles
+// read pages articles
 app.use('/articles', articleRouter) 
 
 app.listen(5000)

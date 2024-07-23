@@ -1,18 +1,23 @@
 <div class="form-group p-3">
     <label for="title">Title</label>
+    <!-- variable title -->
     <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
 </div>
 
 <div class="form-group p-3">
     <label for="description">Description</label>
+    <!-- variable description -->
     <textarea required name="description" id="description" class="form-control"><%= article.description %></textarea>
 </div>
 
 <div class="form-group p-3">
     <label for="markdown">Markdown</label>
+    <!-- variable markdown -->
     <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
 </div>
 
+<!-- button cancel -->
 <a class="btn btn-danger m-3" href="/">Cancel</a>
 
+<!-- button save -->
 <button class="btn btn-success" type="submit">Save</button>
