@@ -20,5 +20,3 @@
 <ul>
     <li>MongoDB</li>
 </ul>
-
-link: <a>https://blog-website-giw3.onrender.com</a>
