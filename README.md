@@ -1,6 +1,5 @@
 <h1>Blog Website</h1>
 <p>this is my first database website</p>
-link: <a>https://blog-website-giw3.onrender.com</a>
 <br>
 <h2>Tools</h2>
 <ul>
@@ -21,3 +20,5 @@ link: <a>https://blog-website-giw3.onrender.com</a>
 <ul>
     <li>MongoDB</li>
 </ul>
+
+link: <a>https://blog-website-giw3.onrender.com</a>
