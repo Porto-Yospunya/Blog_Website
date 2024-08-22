@@ -8,13 +8,15 @@ npm i methodOverride
 */
 
 const express = require('express') // import express
-const mongoose = require('mongoose') // import mongooses
+// const mongoose = require('mongoose') // import mongooses
 const methodOverride = require('method-override')
+const path = require('path')
+require('dotenv').config()
 
 const Article = require('./models/article') // article theme
 const articleRouter = require('./routues/articles') // all articles 
 const connectDB = require('./connectMongo')
-require('dotenv').config()
+
 
 const app = express() 
 
@@ -25,6 +27,7 @@ connectDB()
 
 // set read folder views
 app.set('view engine', 'ejs')
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 

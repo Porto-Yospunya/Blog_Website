@@ -1,0 +1,116 @@
+:root {
+    --white-bg: #ffffff;
+    --green-bg: #009c5b;
+    --black-bg: #000000;
+    --wheat-bg: #f5deb3;
+    --skyblue-bg: #3c6fa8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    box-shadow: 0 1px 5px 0 var(--black-bg);
+    background-color: var(--wheat-bg);
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    color: var(--white-bg);
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
+}
+
+.new-button {
+    right: 3%;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: fixed;
+    background-color: var(--green-bg);
+    border-radius: 100%;
+}
+
+.new-button a {
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    text-decoration: none;
+    color: var(--white-bg);
+}
+
+.new-button:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.content-box {
+    background-color: var(--wheat-bg);
+    width: 70%;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--black-bg);
+    box-shadow: 10px 10px 0 0 var(--black-bg);
+    padding: 20px;
+}   
+
+.content-box .title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.content-box .date p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.content-box .description p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.any-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.readmore-btn, .any-button .edit-btn, .del-btn{
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: var(--white-bg);
+    padding: 10px;
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+}
+
+.readmore-btn a, .any-button .edit-btn a, .del-btn button {
+    text-decoration: none;
+    color: var(--black-bg);
+    border: none;
+    padding: 0 5px;
+    background: none;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.readmore-btn:hover, .any-button .edit-btn:hover, .del-btn:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}
