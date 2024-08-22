@@ -13,11 +13,15 @@ const methodOverride = require('method-override')
 
 const Article = require('./models/article') // article theme
 const articleRouter = require('./routues/articles') // all articles 
+const connectDB = require('./connectMongo')
+require('dotenv').config()
 
 const app = express() 
 
 // connect mongodb
-mongoose.connect('mongodb://localhost:27017/blog')
+// mongoose.connect('mongodb://localhost:27017/blog')
+
+connectDB()
 
 // set read folder views
 app.set('view engine', 'ejs')
@@ -33,4 +37,8 @@ app.get('/', async (req, res) => {
 // read pages articles
 app.use('/articles', articleRouter) 
 
-app.listen(5000)
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+  console.log("Server is running on port " + PORT);
+});
