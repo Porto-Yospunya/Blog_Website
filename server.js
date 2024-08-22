@@ -37,8 +37,8 @@ app.get('/', async (req, res) => {
 // read pages articles
 app.use('/articles', articleRouter) 
 
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 
-app.listen(PORT, () => {
-  console.log("Server is running on port " + PORT);
+app.listen(port, () => {
+  console.log("Server is running on port " + port);
 });
