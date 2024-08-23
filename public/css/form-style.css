@@ -6,3 +6,103 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--wheat-bg);
+}
+
+form {
+    margin: 40px;
+}
+
+.form-title, .form-description, .form-markdown, .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-title input {
+    background: none;
+    border: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white-bg);
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
+}
+
+.form-title input::placeholder {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white-bg);
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
+}
+
+.form-description textarea {
+    margin: 10px 0;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    background-color: var(--white-bg);
+    border: 2px solid var(--black-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-size: 1rem;
+}
+
+.form-description textarea::placeholder {
+    font-size: 1rem;
+    color: black;
+}
+
+.form-markdown textarea {
+    margin: 10px 0;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    height: 300px;
+    background-color: var(--white-bg);
+    border: 2px solid var(--black-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-size: 1rem;
+}
+
+.form-markdown textarea::placeholder {
+    font-size: 1rem;
+    color: black;
+}
+
+.btn-container {
+    padding: 20px;
+    /* border: 2px solid var(--black-bg);
+    background-color: var(--white-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg); */
+}
+
+.btn-container a {
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--black-bg);
+    background-color: var(--white-bg);
+    border: 1px solid var(--black-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    color: var(--black-bg);
+    background-color: var(--white-bg);
+    border: 1px solid var(--black-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+}
+
+a:hover, button:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}

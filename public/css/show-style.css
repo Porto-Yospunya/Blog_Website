@@ -48,17 +48,22 @@ section {
 }
 
 .button-container {
+    padding: 20px;
+    margin: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* background-color: var(--white-bg);
+    border: 2px solid var(--black-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg); */
 }
 
 .edit-btn, .back-btn {
-    margin: 0 40px;
+    margin-left: 20px;
 }
 
 .edit-btn a, .back-btn a {
-    font-size: 1.2rem;
-    padding: 10px 40px;
+    font-size: 1rem;
+    padding: 10px 30px;
     text-decoration: none;
     color: var(--black-bg);
     background-color: var(--white-bg);
