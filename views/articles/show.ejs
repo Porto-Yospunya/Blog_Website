@@ -10,22 +10,23 @@
     <header>
         <!-- title -->
         <h1><%= article.title %></h1>
-        <!-- button -->
-         <div class="back-btn">
-            <a class="btn btn-primary" href="/"><</a>
-         </div>
-        <div class="m-3">
-            <a class="btn btn-warning" href="/articles/edit/<%= article.id %>">Edit</a>
-        </div>
-        <!-- date -->
-        <div class="p-3">
-            <%= article.createdAt.toLocaleDateString() %>
+         <!-- date -->
+        <div class="date-box">
+            <h4><%= article.createdAt.toLocaleDateString() %></h4>
         </div>
     </header>
     <section>
         <!-- markdown -->
-        <div class="p-3">
+        <div class="markdown-container">
             <%- article.sanitizedHtml %>
+        </div>
+        <div class="button-container">
+            <div class="back-btn">
+                <a href="/">Back</a>
+            </div>
+            <div class="edit-btn">
+                <a href="/articles/edit/<%= article.id %>">Edit</a>
+            </div>
         </div>
     </section>
 </body>
