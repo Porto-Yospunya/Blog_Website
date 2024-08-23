@@ -1,0 +1,53 @@
+@import "color.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--wheat-bg);
+}
+
+header {
+    padding-top: 60px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--white-bg);
+    font-size: 2.5rem;
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
+}
+
+section {
+    margin: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid var(--black-bg);
+    background-color: var(--white-bg);
+    box-shadow: 5px 5px 0 0 var(--black-bg);
+}
+
+.back-btn {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: var(--white-bg);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
+}

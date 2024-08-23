@@ -1,10 +1,4 @@
-:root {
-    --white-bg: #ffffff;
-    --green-bg: #009c5b;
-    --black-bg: #000000;
-    --wheat-bg: #f5deb3;
-    --skyblue-bg: #3c6fa8;
-}
+@import "color.css";
 
 * {
     padding: 0;
@@ -30,14 +24,15 @@ header h1 {
 
 .new-button {
     right: 3%;
-    bottom: 5%;
+    bottom: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
     position: fixed;
-    background-color: var(--green-bg);
+    background-color: var(--skyblue-bg);
     border-radius: 100%;
+    z-index: 1;
 }
 
 .new-button a {
@@ -56,12 +51,15 @@ header h1 {
 section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .content-box {
     background-color: var(--wheat-bg);
-    width: 70%;
-    margin: 40px 20px;
+    width: 80%;
+    margin: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--black-bg);
@@ -93,10 +91,11 @@ section {
 }
 
 .readmore-btn, .any-button .edit-btn, .del-btn{
-    margin-top: 10px;
-    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    margin: 5px;
     background-color: var(--white-bg);
-    padding: 10px;
+    padding: 10px 6px;
     box-shadow: 5px 5px 0 0 var(--black-bg);
 }
 
@@ -113,4 +112,25 @@ section {
 .readmore-btn:hover, .any-button .edit-btn:hover, .del-btn:hover {
     transition: 300ms;
     transform: scale(1.05);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    background-color: var(--wheat-bg);
+    padding: 30px;
+    border: 1px solid var(--black-bg);
+    z-index: 0;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-bg);
+    text-shadow: -1px 1px 0 var(--black-bg),
+                1px 1px 0 var(--black-bg),
+                1px -1px 0 var(--black-bg),
+                -1px -1px 0 var(--black-bg);
 }
