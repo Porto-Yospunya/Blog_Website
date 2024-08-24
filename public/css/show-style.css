@@ -1,4 +1,4 @@
-@import "color.css";
+@import "color-fonts.css";
 
 * {
     padding: 0;
@@ -18,6 +18,7 @@ header {
 header h1 {
     color: var(--white-bg);
     font-size: 2.5rem;
+    font-family: var(--font-prompt);
     text-shadow: -1px 1px 0 var(--black-bg),
                 1px 1px 0 var(--black-bg),
                 1px -1px 0 var(--black-bg),
@@ -33,6 +34,9 @@ header h1 {
     border: 2px solid var(--black-bg);
     background-color: var(--white-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-family: var(--font-prompt);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .date-box {
@@ -41,6 +45,7 @@ header h1 {
 
 .date-box h4 {
     font-size: 1.3rem;
+    font-family: var(--font-prompt);
 }
 
 section {
@@ -58,7 +63,7 @@ section {
 }
 
 .edit-btn, .back-btn {
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
 .edit-btn a, .back-btn a {
@@ -69,6 +74,8 @@ section {
     background-color: var(--white-bg);
     border: 1px solid var(--black-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-family: var(--font-prompt);
+    font-weight: 600;
 }
 
 .edit-btn:hover, .back-btn:hover {

@@ -1,4 +1,4 @@
-@import "color.css";
+@import "color-fonts.css";
 
 * {
     padding: 0;
@@ -20,6 +20,7 @@ header h1 {
     text-align: center;
     padding: 20px;
     color: var(--white-bg);
+    font-family: var(--font-prompt);
     text-shadow: -1px 1px 0 var(--black-bg),
                 1px 1px 0 var(--black-bg),
                 1px -1px 0 var(--black-bg),
@@ -41,7 +42,7 @@ header h1 {
 
 .new-button a {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     position: absolute;
     text-decoration: none;
     color: var(--white-bg);
@@ -73,19 +74,22 @@ section {
 
 .content-box .title h2 {
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 600;
+    font-family: var(--font-prompt);
 }
 
 .content-box .date p {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 15px;
+    font-family: var(--font-prompt);
 }
 
 .content-box .description p {
     font-size: 1rem;
     margin: 10px 0;
+    font-family: var(--font-prompt);
 }
 
 .any-button {
@@ -111,7 +115,8 @@ section {
     padding: 0 5px;
     background: none;
     font-size: .8rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: var(--font-prompt);
 }
 
 .readmore-btn:hover, .any-button .edit-btn:hover, .del-btn:hover {

@@ -27,6 +27,7 @@ form {
     font-size: 2rem;
     font-weight: 700;
     color: var(--white-bg);
+    font-family: var(--font-prompt);
     text-shadow: -1px 1px 0 var(--black-bg),
                 1px 1px 0 var(--black-bg),
                 1px -1px 0 var(--black-bg),
@@ -36,6 +37,7 @@ form {
 .form-title input::placeholder {
     text-align: center;
     font-size: 2rem;
+    font-family: var(--font-prompt);
     color: var(--white-bg);
     text-shadow: -1px 1px 0 var(--black-bg),
                 1px 1px 0 var(--black-bg),
@@ -53,11 +55,13 @@ form {
     border: 2px solid var(--black-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
     font-size: 1rem;
+    font-family: var(--font-prompt);
 }
 
 .form-description textarea::placeholder {
     font-size: 1rem;
     color: black;
+    font-family: var(--font-prompt);
 }
 
 .form-markdown textarea {
@@ -70,11 +74,13 @@ form {
     border: 2px solid var(--black-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
     font-size: 1rem;
+    font-family: var(--font-prompt);
 }
 
 .form-markdown textarea::placeholder {
     font-size: 1rem;
     color: black;
+    font-family: var(--font-prompt);
 }
 
 .btn-container {
@@ -92,6 +98,9 @@ form {
     background-color: var(--white-bg);
     border: 1px solid var(--black-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-family: var(--font-prompt);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .btn-container button {
@@ -100,6 +109,9 @@ form {
     background-color: var(--white-bg);
     border: 1px solid var(--black-bg);
     box-shadow: 5px 5px 0 0 var(--black-bg);
+    font-family: var(--font-prompt);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 a:hover, button:hover {
